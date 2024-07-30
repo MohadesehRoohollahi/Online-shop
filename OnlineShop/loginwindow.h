@@ -6,6 +6,7 @@
 #include <QMessageBox>
 #include <sstream>
 #include "user.h"
+#include "mainwindow.h"
 
 
 QT_BEGIN_NAMESPACE

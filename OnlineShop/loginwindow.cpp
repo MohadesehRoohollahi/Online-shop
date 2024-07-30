@@ -30,50 +30,69 @@ void LoginWindow::on_Ok_pushButton_clicked()
 
         User user;
 
-        ifstream usersInformation("Users.txt");
-        if(!usersInformation.is_open())
-            QMessageBox::warning(this , "Error!" , "Can't open file");
+        if(ui->SignUp_radioButton->isChecked() == true){
 
-        string line , phoneNumber;
+            ofstream usersInformations("Users.txt" , ios::app);
+            if(!usersInformations.is_open()){
+                QMessageBox * message = new QMessageBox(this);
+                message->setStyleSheet("background:#5C84AF;color:#00264A;font-weight:bold;");
+                message->setText("Cannot open the file");
+                message->show();
+            }
 
-        while(getline(usersInformation , line)){
+            user.setName(ui->Name_lineEdit->text().toStdString());
+            user.setPhoneNumber(ui->PhoneNumber_lineEdit->text().toStdString());
 
-            istringstream x(line);
-            getline(x , phoneNumber , ',');
+            usersInformations << user.getPhoneNumber() << ',' << user.getName() << ',' << endl;
 
-            if(ui->SignUp_radioButton->isChecked() == true){
+            QMessageBox * message = new QMessageBox(this);
+            message->setStyleSheet("background:#5C84AF;color:#00264A;font-weight:bold;");
+            message->setText("You signed up successfully");
+            message->show();
+
+            ui->Name_lineEdit->setText("");
+            ui->PhoneNumber_lineEdit->setText("");
+            //vorood  be safheye tablighat
+        }
+
+        else if(ui->SignIn_radioButton->isChecked() == true){
+
+            ifstream usersInformations("Users.txt");
+            if(!usersInformations.is_open()){
+                QMessageBox * message = new QMessageBox(this);
+                message->setStyleSheet("background:#5C84AF;color:#00264A;font-weight:bold;");
+                message->setText("Cannot open the file");
+                message->show();
+            }
+
+            string line , phoneNumber;
+            bool found = false;
+
+            while(getline(usersInformations , line)){
+
+                istringstream x(line);
+                getline(x , phoneNumber , ',');
 
                 if(ui->PhoneNumber_lineEdit->text().toStdString() == phoneNumber){
-                    QMessageBox * message = new QMessageBox(this);
-                    message->setStyleSheet("background:#5C84AF;color:#00264A;font-weight:bold;");
-                    message->setText("Already there is an account with this phone number");
-                    message->show();
+                    found = true;
+                    user.setPhoneNumber(phoneNumber);
+                    string name;
+                    getline(x , name , ',');
+                    user.setName(name);
 
-                }
+                    MainWindow * newPage = new MainWindow;
+                    this->close();
+                    newPage->show();
 
-                else{
-
-                    ofstream usersInformation("Users.txt" , ios::app);
-                    if(!usersInformation.is_open())
-                        QMessageBox::warning(this , "Error!" , "Can't open file");
-
-                    user.setName(ui->Name_lineEdit->text().toStdString());
-                    user.setPhoneNumber(ui->PhoneNumber_lineEdit->text().toStdString());
-
-                    usersInformation << user.getName() << ',' << user.getPhoneNumber() << ',' << endl;
-
-                    //vorood  be safheye tablighat
-
+                    break;
                 }
             }
 
-            else if(ui->SignIn_radioButton->isChecked() == true){
-                user.setPhoneNumber(phoneNumber);
-                string name;
-                getline(x , name , ',');
-                user.setName(name);
-                //vorood be safheye bad
-
+            if(!found){
+                QMessageBox * message = new QMessageBox(this);
+                message->setStyleSheet("background:#5C84AF;color:#00264A;font-weight:bold;");
+                message->setText("There is not such a user in system");
+                message->show();
             }
         }
     }
