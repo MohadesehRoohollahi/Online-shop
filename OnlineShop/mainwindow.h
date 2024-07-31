@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "shoeswindow.h"
+#include "accessorieswindow.h"
+#include "clotheswindow.h"
 
 namespace Ui {
 class MainWindow;
@@ -14,6 +17,14 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+
+    void on_ShoespushButton_clicked();
+
+    void on_AccessoriespushButton_clicked();
+
+    void on_ClothespushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
