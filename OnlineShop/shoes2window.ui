@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ShoesWindow</class>
- <widget class="QMainWindow" name="ShoesWindow">
+ <class>Shoes2Window</class>
+ <widget class="QMainWindow" name="Shoes2Window">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -69,7 +69,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image : url(:/images/shoe2.jpg)</string>
+       <string notr="true">background-image : url(:/images/barana.jpg)</string>
       </property>
       <property name="text">
        <string/>
@@ -78,9 +78,9 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>70</x>
         <y>270</y>
-        <width>151</width>
+        <width>181</width>
         <height>41</height>
        </rect>
       </property>
@@ -96,7 +96,7 @@
 background:none;</string>
       </property>
       <property name="text">
-       <string>Clarck vans</string>
+       <string>Barana sandal</string>
       </property>
      </widget>
     </widget>
@@ -125,7 +125,7 @@ background:none;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image : url(:/images/kalej2.jpg)</string>
+       <string notr="true">background-image : url(:/images/sharlot.jpg)</string>
       </property>
       <property name="text">
        <string/>
@@ -136,7 +136,7 @@ background:none;</string>
        <rect>
         <x>70</x>
         <y>270</y>
-        <width>171</width>
+        <width>181</width>
         <height>41</height>
        </rect>
       </property>
@@ -152,7 +152,7 @@ background:none;</string>
 background:none;</string>
       </property>
       <property name="text">
-       <string>Yuna college</string>
+       <string>Sharlot sandal</string>
       </property>
      </widget>
     </widget>
@@ -181,7 +181,7 @@ background:none;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image : url(:/images/vans.jpg)</string>
+       <string notr="true">background-image : url(:/images/suzan.jpg)</string>
       </property>
       <property name="text">
        <string/>
@@ -208,7 +208,7 @@ background:none;</string>
 background:none;</string>
       </property>
       <property name="text">
-       <string>Morgan vans</string>
+       <string>Suzan sandal</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_7">
@@ -250,7 +250,7 @@ background:none;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image : url(:/images/kalej.jpg)</string>
+       <string notr="true">background-image : url(:/images/shomix.jpg)</string>
       </property>
       <property name="text">
        <string/>
@@ -259,9 +259,9 @@ background:none;</string>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>60</x>
         <y>270</y>
-        <width>131</width>
+        <width>191</width>
         <height>41</height>
        </rect>
       </property>
@@ -277,7 +277,7 @@ background:none;</string>
 background:none;</string>
       </property>
       <property name="text">
-       <string>Lofer pop</string>
+       <string>Shomix sandal</string>
       </property>
      </widget>
     </widget>
@@ -306,7 +306,7 @@ background:none;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image : url(:/images/vans_panda.jpg)</string>
+       <string notr="true">background-image : url(:/images/mandi.jpg)</string>
       </property>
       <property name="text">
        <string/>
@@ -315,9 +315,9 @@ background:none;</string>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>70</x>
         <y>270</y>
-        <width>151</width>
+        <width>171</width>
         <height>41</height>
        </rect>
       </property>
@@ -333,7 +333,7 @@ background:none;</string>
 background:none;</string>
       </property>
       <property name="text">
-       <string>Panda vans</string>
+       <string>Mandi sandal</string>
       </property>
      </widget>
     </widget>
@@ -362,7 +362,7 @@ background:none;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image : url(:/images/Allstar.jpg)</string>
+       <string notr="true">background-image : url(:/images/spring.jpg)</string>
       </property>
       <property name="text">
        <string/>
@@ -371,9 +371,9 @@ background:none;</string>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>70</x>
         <y>270</y>
-        <width>221</width>
+        <width>181</width>
         <height>41</height>
        </rect>
       </property>
@@ -389,7 +389,7 @@ background:none;</string>
 background:none;</string>
       </property>
       <property name="text">
-       <string>Converse All star</string>
+       <string>Spring sandal</string>
       </property>
      </widget>
     </widget>

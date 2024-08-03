@@ -14,6 +14,7 @@ SOURCES += \
     main.cpp \
     loginwindow.cpp \
     mainwindow.cpp \
+    shoes2window.cpp \
     shoeswindow.cpp \
     user.cpp
 
@@ -22,6 +23,7 @@ HEADERS += \
     clotheswindow.h \
     loginwindow.h \
     mainwindow.h \
+    shoes2window.h \
     shoeswindow.h \
     user.h
 
@@ -30,6 +32,7 @@ FORMS += \
     clotheswindow.ui \
     loginwindow.ui \
     mainwindow.ui \
+    shoes2window.ui \
     shoeswindow.ui
 
 # Default rules for deployment.
