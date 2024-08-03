@@ -259,7 +259,7 @@ background:none;</string>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>40</x>
         <y>270</y>
         <width>191</width>
         <height>41</height>
@@ -394,17 +394,17 @@ background:none;</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="LastPagepushButton">
     <property name="geometry">
      <rect>
-      <x>970</x>
+      <x>0</x>
       <y>360</y>
       <width>30</width>
       <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/next-page.png);
+     <string notr="true">background-image:url(:/images/last-page.png);
 border-radius:10px;</string>
     </property>
     <property name="text">

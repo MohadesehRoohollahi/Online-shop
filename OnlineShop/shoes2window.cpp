@@ -12,3 +12,11 @@ Shoes2Window::~Shoes2Window()
 {
     delete ui;
 }
+
+void Shoes2Window::on_LastPagepushButton_clicked()
+{
+    ShoesWindow * newPage = new ShoesWindow;
+    this->close();
+    newPage->show();
+}
+

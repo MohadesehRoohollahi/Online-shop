@@ -14,6 +14,7 @@ SOURCES += \
     main.cpp \
     loginwindow.cpp \
     mainwindow.cpp \
+    shoe.cpp \
     shoes2window.cpp \
     shoeswindow.cpp \
     user.cpp
@@ -23,6 +24,7 @@ HEADERS += \
     clotheswindow.h \
     loginwindow.h \
     mainwindow.h \
+    shoe.h \
     shoes2window.h \
     shoeswindow.h \
     user.h

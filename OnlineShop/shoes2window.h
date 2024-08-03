@@ -2,6 +2,7 @@
 #define SHOES2WINDOW_H
 
 #include <QMainWindow>
+#include "shoeswindow.h"
 
 namespace Ui {
 class Shoes2Window;
@@ -14,6 +15,9 @@ class Shoes2Window : public QMainWindow
 public:
     explicit Shoes2Window(QWidget *parent = nullptr);
     ~Shoes2Window();
+
+private slots:
+    void on_LastPagepushButton_clicked();
 
 private:
     Ui::Shoes2Window *ui;
